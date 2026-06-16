@@ -67,4 +67,6 @@ src/
 This project is being rolled out in phases to meet the client's business goals:
 - **Phase 1 (Current):** Responsive, high-performance marketing landing page with smooth UX.
 - **Phase 2 (Next):** Integration of a Node.js/Express backend to make the contact and quotation forms fully functional.
-- **Phase 3:** A secure client portal and admin dashboard to track fire safety service schedules, equipment maintenance timelines, and operational workflows.
+- **Phase 3:** A secure client portal and admin dashboard to track fire safety service schedules.
+
+To clone - git clone "https://github.com/Rashmika-Sa/Britex-Safety-House.git"
