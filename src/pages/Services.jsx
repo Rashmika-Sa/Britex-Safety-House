@@ -81,7 +81,7 @@ export default function Services() {
             subtitle="Comprehensive support for all your fire safety needs"
           />
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-20">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-20 justify-items-center">
             {services.map((service, i) => (
               <ServiceCard
                 key={i}
@@ -103,7 +103,7 @@ export default function Services() {
             subtitle="From initial consultation to ongoing support"
           />
 
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 justify-items-center">
             {timeline.map((item, i) => (
               <motion.div
                 key={i}
@@ -111,15 +111,16 @@ export default function Services() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: i * 0.1 }}
+                className="w-full"
               >
                 {/* Timeline connector */}
                 {i < timeline.length - 1 && (
                   <div className="hidden md:block absolute right-0 top-12 w-full h-1 bg-gradient-to-r from-brand-red/50 to-transparent" />
                 )}
 
-                <div className="relative bg-white rounded-2xl p-8 shadow-soft border border-gray-200 hover:shadow-soft-lg transition-all">
+                <div className="relative bg-white rounded-2xl p-8 shadow-soft border border-gray-200 hover:shadow-soft-lg transition-all flex flex-col items-center text-center w-full mx-auto">
                   <motion.div
-                    className="w-12 h-12 bg-brand-red text-white rounded-full flex items-center justify-center text-xl font-bold mb-4"
+                    className="w-12 h-12 bg-brand-red text-white rounded-full flex items-center justify-center text-xl font-bold mb-4 mx-auto"
                     whileHover={{ scale: 1.2, rotate: 360 }}
                     transition={{ duration: 0.6 }}
                   >
@@ -142,7 +143,7 @@ export default function Services() {
             subtitle="Proven expertise and commitment to your safety"
           />
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 justify-items-center">
             {[
               {
                 title: '35+ Years Experience',
@@ -170,9 +171,9 @@ export default function Services() {
                 description: 'Fast turnaround on installations, maintenance, and emergency calls',
               },
             ].map((benefit, i) => (
-              <motion.div
-                key={i}
-                className="p-8 rounded-2xl bg-brand-light border border-gray-200 hover:border-brand-red/30 transition-all"
+                <motion.div
+                  key={i}
+                  className="p-8 rounded-2xl bg-brand-light border border-gray-200 hover:border-brand-red/30 transition-all text-center flex flex-col items-center w-full"
                 initial={{ opacity: 0, scale: 0.9 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}

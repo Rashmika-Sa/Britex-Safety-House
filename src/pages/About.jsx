@@ -94,11 +94,11 @@ export default function About() {
             subtitle="Principles that guide every decision we make"
           />
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 justify-items-center">
             {values.map((value, i) => (
               <motion.div
                 key={i}
-                className="bg-white rounded-2xl p-8 shadow-soft border border-gray-200 hover:shadow-glow-lg transition-all"
+                className="card-glow p-8 flex flex-col items-center text-center rounded-2xl bg-white border border-gray-200 shadow-soft hover:shadow-glow-lg transition-all w-full"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -106,7 +106,7 @@ export default function About() {
                 whileHover={{ y: -10 }}
               >
                 <motion.div
-                  className="w-14 h-14 bg-brand-red/10 rounded-xl flex items-center justify-center text-brand-red mb-4"
+                  className="w-14 h-14 bg-brand-red/10 rounded-xl flex items-center justify-center text-brand-red mb-4 mx-auto"
                   whileHover={{ scale: 1.1, rotate: 5 }}
                 >
                   <value.icon size={28} />

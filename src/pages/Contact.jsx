@@ -89,11 +89,11 @@ export default function Contact() {
             subtitle="Reach out to us through your preferred channel"
           />
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16 justify-items-center">
             {contactMethods.map((method, i) => (
               <motion.div
                 key={i}
-                className="bg-brand-light rounded-2xl p-8 border border-gray-200 hover:border-brand-red/30 transition-all text-center"
+                className="bg-brand-light rounded-2xl p-8 border border-gray-200 hover:border-brand-red/30 transition-all text-center flex flex-col items-center w-full"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -217,7 +217,7 @@ export default function Contact() {
               {locations.map((location, i) => (
                 <motion.div
                   key={i}
-                  className="bg-white rounded-3xl p-8 shadow-soft border-l-4 border-brand-red hover:shadow-glow-lg transition-all"
+                  className="bg-white rounded-3xl p-8 shadow-soft border-l-4 border-brand-red hover:shadow-glow-lg transition-all text-center flex flex-col items-center w-full"
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
@@ -226,16 +226,16 @@ export default function Contact() {
                 >
                   <h3 className="text-2xl font-bold text-brand-black mb-4">{location.city}</h3>
 
-                  <div className="space-y-4">
-                    <div className="flex items-start gap-3">
-                      <MapPin size={20} className="text-brand-red flex-shrink-0 mt-1" />
-                      <div>
+                  <div className="space-y-4 w-full max-w-lg">
+                    <div className="flex flex-col items-center gap-3">
+                      <MapPin size={26} className="text-brand-red" />
+                      <div className="text-center">
                         <p className="font-semibold text-gray-900">{location.address}</p>
                         <p className="text-sm text-gray-600 mt-1">{location.coordinates}</p>
                       </div>
                     </div>
 
-                    <div className="flex items-center gap-3">
+                    <div className="flex items-center gap-3 justify-center">
                       <Phone size={20} className="text-brand-red" />
                       <a
                         href={`tel:${location.phone}`}
