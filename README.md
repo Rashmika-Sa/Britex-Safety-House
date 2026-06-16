@@ -1,174 +1,70 @@
-# 🔥 Britex - Advanced Fire Safety Solutions
+# Britex Safety House
 
-A modern, futuristic corporate website for Britex Group of Companies, built with **React**, **Tailwind CSS**, and **Framer Motion**. Features cutting-edge design with glassmorphism effects, smooth animations, and responsive layouts.
+Britex Safety House is a responsive fire-safety marketing and services website for Britex Group of Companies. It presents the company’s products, services, story, and contact details through a modern single-page experience with routed sections for Products, Services, About, and Contact.
 
-## 🎨 Design Features
+## What This Project Does
 
-- **Modern & Futuristic Design**: Clean, minimal, slightly industrial aesthetic
-- **Glassmorphism Effects**: Blur and transparency effects for a premium feel
-- **3D Hover Animations**: Interactive cards and buttons with depth
-- **Smooth Animations**: Scroll-triggered reveals and transition effects
-- **Color Scheme**: White, Red (#E63946), Black with premium gradients
-- **Fully Responsive**: Mobile-first design that works perfectly on all devices
+- Shows Britex’s fire safety product range, including extinguishers, alarm systems, detection systems, hydrant systems, hose reel systems, and PPE.
+- Highlights core services such as fire safety training, installation, maintenance, and equipment supply.
+- Shares company background, timeline, and trust signals for prospective customers.
+- Provides contact methods for phone, email, WhatsApp, and office locations.
 
-## 📱 Pages
+## Tech Stack
 
-- **Home**: Hero section, stats, product overview
-- **Products**: Fire extinguishers (4 types) + other products with category tabs
-- **Services**: Training, installation, maintenance, and PPE supply
-- **About**: Company story, mission, values, timeline, and expertise
-- **Contact**: Contact forms, location details, and WhatsApp integration
+- React 18
+- React Router DOM
+- Vite
+- Tailwind CSS
+- Framer Motion
+- Lucide React
+- PostCSS and Autoprefixer
 
-## 🚀 Quick Start
+## Video Demo
 
-### Prerequisites
-- Node.js (v16 or higher)
-- npm or yarn
+<iframe src="https://drive.google.com/file/d/1Rl6HoRrvyR_ynUmU_6uRkb2b2fM3-8fI/preview" width="100%" height="480" allow="autoplay"></iframe>
 
-### Installation
+## Run Locally
+
+1. Install dependencies:
 
 ```bash
-# Clone the repository
-git clone <repository-url>
-
-# Navigate to project directory
-cd britex-safety-house
-
-# Install dependencies
 npm install
+```
 
-# Start development server
+2. Start the development server:
+
+```bash
 npm run dev
 ```
 
-The website will be available at `http://localhost:5173`
+3. Open the app in your browser at the local URL shown in the terminal, usually `http://127.0.0.1:5173/`.
 
-### Build for Production
+4. To build and preview the production bundle:
 
 ```bash
 npm run build
-```
-
-This creates an optimized production build in the `dist` folder.
-
-### Preview Production Build
-
-```bash
 npm run preview
 ```
 
-## 📂 Project Structure
+## Project Structure
 
 ```
 src/
-├── components/          # Reusable components
-│   ├── Navbar.jsx
-│   ├── Footer.jsx
-│   ├── WhatsAppButton.jsx
-│   ├── ProductCard.jsx
-│   ├── ServiceCard.jsx
-│   ├── StatCounter.jsx
-│   └── SectionHeader.jsx
-├── pages/              # Page components
-│   ├── Home.jsx
-│   ├── Products.jsx
-│   ├── Services.jsx
-│   ├── About.jsx
-│   └── Contact.jsx
-├── App.jsx             # Main app with routing
-├── main.jsx            # Entry point
-└── index.css           # Global styles
-
+├── components/   # Reusable UI components
+├── pages/        # Routed page sections
+├── App.jsx       # Route setup
+├── main.jsx      # App entry point
+└── index.css     # Global styles
 ```
 
-## 🛠️ Tech Stack
+## Notes
 
-- **Frontend Framework**: React 18.2.0
-- **Styling**: Tailwind CSS 3.3.2
-- **Animations**: Framer Motion 10.16.4
-- **Icons**: Lucide React 0.263.1
-- **Routing**: React Router DOM 6.14.0
-- **Build Tool**: Vite 4.4.5
-- **CSS Processing**: PostCSS & Autoprefixer
+- The contact form is UI-only and does not require a backend.
+- The WhatsApp buttons link directly to Britex support.
+- Screenshot assets are stored in `public/screenshots/`.
 
-## 🎯 Key Features
-
-### Navigation
-- Sticky navbar that becomes solid on scroll
-- Smooth transition effects
-- Mobile-responsive hamburger menu
-- Active link indicators
-
-### Hero Section
-- Fullscreen hero with animated background
-- Compelling CTA buttons
-- Scroll-to-explore indicator
-- Gradient animations
-
-### Components
-- **ProductCard**: Interactive product showcase with hover effects
-- **ServiceCard**: Service highlights with icons and descriptions
-- **StatCounter**: Animated number counters
-- **SectionHeader**: Consistent section titles with animations
-
-### Animations
-- Framer Motion for smooth transitions
-- Scroll-triggered reveals
-- Hover scale and rotation effects
-- Floating and pulse animations
-- Gradient glows on interaction
-
-### Contact Features
-- Contact form (UI only, no backend required)
-- Multiple location details
-- WhatsApp integration (floating button + direct links)
-- Phone and email contact methods
-
-## 🎨 Customization
-
-### Colors
-Edit `tailwind.config.js` to customize the color scheme:
-
-```js
-colors: {
-  'brand-red': '#E63946',
-  'brand-black': '#1A1A1A',
-  'brand-white': '#FFFFFF',
-}
-```
-
-### Animations
-Modify animation timings in `tailwind.config.js` under the `animation` section.
-
-### Content
-Update company information in respective page files:
-- Contact details in `src/pages/Contact.jsx`
-- About section in `src/pages/About.jsx`
-- Products list in `src/pages/Home.jsx` and `src/pages/Products.jsx`
-
-## 📱 Contact Information
-
-**Galle Office**
-- Address: No.31 Awewalwala Road, Bataganwila, Galle
-- Phone: 0912241405
-
-**Colombo Office**
-- Address: 16, Deniya Road, Bollatha, Kandana
-- Phone: 0702518581
-
-**WhatsApp**: 0712768768
-
-## 📄 License
-
-This project is proprietary to Britex Group of Companies.
-
-## 🤝 Support
-
-For inquiries and support, contact:
-- Email: info@britex.lk
-- Phone: 0912241405 (Galle) / 0702518581 (Colombo)
-- WhatsApp: 0712768768
-
----
-
-**Built with ❤️ for Fire Safety Excellence**
+## Roadmap & Upcoming Features (In Progress)
+This project is being rolled out in phases to meet the client's business goals:
+- **Phase 1 (Current):** Responsive, high-performance marketing landing page with smooth UX.
+- **Phase 2 (Next):** Integration of a Node.js/Express backend to make the contact and quotation forms fully functional.
+- **Phase 3:** A secure client portal and admin dashboard to track fire safety service schedules, equipment maintenance timelines, and operational workflows.
